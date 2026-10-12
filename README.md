@@ -3,8 +3,14 @@
 Korean fonts that the 감정도감 (Emotion Dex) app downloads on demand, served through jsDelivr:
 
 ```
-https://cdn.jsdelivr.net/gh/SynInaSoft/gamjeongdogam-fonts@v1/fonts/<file>
+https://cdn.jsdelivr.net/gh/SynInaSoft/gamjeongdogam-fonts@pack<N>-v1/fonts/<file>
 ```
+
+jsDelivr serves at most 50 MB per GitHub tag, and all the fonts together are about 100 MB. So the fonts are split into three packs. Each pack is a separate commit, not on `main`, tagged `pack1-v1`, `pack2-v1` and `pack3-v1`, and holds only its own fonts plus this README and `licenses/`. `main` has every file.
+
+- pack1: GamjaFlower, HiMelody, Dongle, PoorStory, NanumPenScript, SingleDay
+- pack2: Stylish, BlackAndWhitePicture, GowunBatang, NanumBrushScript, NanumMyeongjo
+- pack3: GowunDodum, MaruBuri, RIDIBatang, LINESeedKR, IBMPlexSansKR, NanumGothic
 
 Every font here is licensed under the SIL Open Font License 1.1. Each font keeps its own copyright notice; see `licenses/`.
 
@@ -28,4 +34,4 @@ Every font here is licensed under the SIL Open Font License 1.1. Each font keeps
 | Stylish-Regular.ttf | Stylish | AsiaSoft Inc. | Google Fonts | licenses/stylish-OFL.txt |
 | BlackAndWhitePicture-Regular.ttf | Black And White Picture | AsiaSoft Inc. | Google Fonts | licenses/blackandwhitepicture-OFL.txt |
 
-Files are never changed under an existing tag. A changed file gets a new file name or a new tag, so cached copies stay valid.
+Files are never changed under an existing tag. A changed file gets a new file name or a new tag (pack1-v2 and so on), so cached copies stay valid. The first tag `v1` holds all fonts and is over the jsDelivr limit; do not use it.
